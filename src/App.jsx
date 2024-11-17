@@ -1,24 +1,28 @@
-import { BrowserRouter, Routes, Route, Link} from 'react-router-dom'
-import Home from "./pages/Home"
-import About from "./pages/About"
-import About from "./pages/Vans"
+import React from "react"
 
-export default function App() {
-  return (
-    <BrowserRouter>
-      <header>
-        <Link className="site-logo" to="/">#VanLife</Link>
-        <nav>
-          <Link to="/about">About</Link>
-          <Link to="/vans">Vans</Link>
-        </nav>
-      </header>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/vans" element={<Vans />} />
-     </Routes>
-    </BrowserRouter>
-    
-  )
+export default function Vans() {
+    const [vans, setVans] = React.useState([])
+    React.useEffect(() => {
+        fetch("/api/vans")
+            .then(res => res.json())
+            .then(data => setVans(data.vans))
+    }, [])
+    const vanElements = vans.map(van => (
+        <div key={van.id} className="van-tile">
+            <img src={van.imageUrl} />
+            <div className="van-info">
+                <h3>{van.name}</h3>
+                <p>${van.price}<span>/day</span></p>
+            </div>
+            <i className={`van-type ${van.type} selected`}>{van.type}</i>
+        </div>
+    ))
+    return (
+        <div className="van-list-container">
+            <h1></h1>
+            <div className="van-list">
+                {vanElements}
+            </div>
+        </div>
+    )
 }
