@@ -1,18 +1,26 @@
 # DJS08 Project Brief: React Router 
 
-🎥 INSERT LOOM PRESENTATION LINK: [Here]
+🎥 INSERT LOOM PRESENTATION LINK: [(https://www.loom.com/share/956623f3eb9441e5a42e3f1e620f708c?sid=d9d8b17c-f6fe-4791-b08c-c4febd5335cc)]
 
-After cloning the repo, run `npm install` to install the dependencies 
+# Using React Router Reflection
+Building the VanLife app has been both an exciting and humbling experience. While I was eager to learn and implement features like routing, authentication, and database integration, I encountered several hurdles that pushed me out of my comfort zone and tested my patience.
 
-Are you ready to get stuck into some React Router? For this challenge, you are required to code along with the lecturer from this lesson on Scrimba V1 [VanLife Project Bootstrapping](https://v1.scrimba.com/learn/react/introduction-to-react-router-6-coafa4877a450245212825034) or on Scrimba V2 click the link here [VanLife Project Bootstrapping](https://v2.scrimba.com/advanced-react-c02h/~02d)
+## Struggles with Firebase Integration
+One of the most significant challenges I faced was setting up Firebase for both database usage and authentication. Despite going through documentation and tutorials, I found myself confused about configuring the Firebase project, managing environment variables securely, and understanding how to connect it seamlessly with React. I spent hours debugging why the authentication flow wouldn't work, only to realize later that my Firebase rules weren't set correctly and that I hadn't initialized the app properly.
 
-The starter code has all the CSS styling required for the project; you will just need to link the corresponding classes as you code along. Jump into the start code here: [GitHub Repository](https://github.com/CodeSpace-Academy/StudentNo_Classcode_Group_Name-Surname_DJS08/tree/main).
+## Difficulty Understanding Routing
+Another roadblock was fully grasping the concept of routing and how to implement it correctly for individual pages. While I managed to set up basic routes, working with dynamic routes and nested layouts was overwhelming. For example, I struggled to pass data between components effectively and often found myself lost when attempting to use useParams or useSearchParams. Debugging these issues was frustrating, as my app often crashed or displayed blank pages, leaving me questioning where I went wrong.
 
-The focus for this project will be to understand routing and present your code. Along with your code, you will need to submit a recorded presentation talking through the presentation points included below.
+## Lessons Learned
+Through this journey, I’ve learned the importance of perseverance, breaking down problems into smaller tasks, and seeking help when needed. While my VanLife app isn’t where I envisioned it to be, every mistake taught me something valuable about development, especially the importance of reading documentation thoroughly and testing configurations incrementally.
+
+## Moving Forward
+I plan to revisit Firebase and React Router concepts on Scrimba with a fresh perspective, focusing on small, focused practice projects to build my confidence. This experience has reminded me that learning to code is a journey filled with setbacks, but it’s those very challenges that lead to growth.
+
+To anyone reviewing this repository, I hope you see not just the code but also the effort, struggle, and determination behind it. Thank you for taking the time to explore my work, flaws and all. Your feedback is welcome as I continue improving! 😊
+
 
 ## React Routing Presentation Talking Points
-
-For your recorded presentation, you will be discussing key concepts related to React Router, an essential tool for building single-page applications. To illustrate your understanding, address the following three questions in your presentation. These questions are designed to test your knowledge of the content from the "Advanced React Routing" Van Life Project, including setup, functionality, and application of React Router.
 
 ### Question 1: Explain the Setup and Basic Configuration of React Router
 
